@@ -7,15 +7,6 @@
 var http = require('http');
 var url = require('url');
 
-/*
- * Celebratory log message.
- */
-
-var Divider = require('divider').Divider;
-var inform = new Divider('iFM');
-inform.print('A new web project to demonstrate the iTunes API.');
-inform.print('.');
-
 var lastPath = '';
 
 function contactLastFM(response) {
