@@ -6,7 +6,6 @@
 
 var http = require('http');
 var url = require('url');
-var iTunes = require('itunes').iTunes;
 
 /*
  * Celebratory log message.
