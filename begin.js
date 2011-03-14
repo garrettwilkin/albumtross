@@ -4,6 +4,33 @@
  *   git@github.com:garrettwilkin/iTunes.git
  */
 
+var nonRootUser = 'garrett';
+var standardHttpPort = 80;
+
+function runInSafeUid(callback) {
+    var state = 'success';
+    try {
+        var server = http.createServer(handleWebRequest);
+        server.listen(standardHttpPort);
+        process.setuid(nonRootUser);
+        var uid = process.getuid();
+        console.log('Running as user: ' + nonRootUser + ' UID: ' + uid + ' on port ' + standardHttpPort);
+    }
+    catch (err) {
+        state = 'error';
+    };
+    callback(state);
+};
+
+function launch(state) {
+    if (state == 'success') {
+        console.log('successful launch');
+    } else {
+        console.log('Initialization Error');
+        process.exit(1);
+    }
+};
+
 var http = require('http');
 var url = require('url');
 
@@ -53,8 +80,4 @@ function handleWebRequest(request, response) {
     }
   }, 5000);
 };
-
-var server = http.createServer(handleWebRequest);
-
-server.listen(8005);
-
+runInSafeUid(launch);
