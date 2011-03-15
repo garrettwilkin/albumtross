@@ -69,7 +69,11 @@ function handleWebRequest(request, response) {
       
       response.write('');
       response.write('');
+    } else {
+      response.write('Welcome to Albumtross');
     }
+
+    response.end();
 
     //Commenting out response.end() allows the album art to 
     //pop into the page when the callbacks complete!
