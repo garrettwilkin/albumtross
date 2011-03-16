@@ -4,8 +4,14 @@
  *   git@github.com:garrettwilkin/iTunes.git
  */
 
+var static = require('node-static');
+var fileServer = new static.Server();
+var http = require('http');
+var url = require('url');
+
 var nonRootUser = 'garrett';
 var standardHttpPort = 80;
+var lastPath = '';
 
 function runInSafeUid(callback) {
     var state = 'success';
@@ -31,57 +37,29 @@ function launch(state) {
     }
 };
 
-var http = require('http');
-var url = require('url');
-
-var lastPath = '';
-
 function contactLastFM(response) {
-    response.write('<p>Contacting Last.fm ... Soon!</p>');
+    console.log('Contacting Last.fm ... Soon!');
 };
 
-
 function handleWebRequest(request, response) {
+  /*
+   * Ye Olde Code
   var responseHeaders  = {
     'Content-Type': 'text/html'
   };
   response.writeHead(200, responseHeaders);
   var path = url.parse(request.url).pathname;
   
-  setTimeout(function() {
-
-    if (path == '/') {
-      response.write('<p>iTunes API test site for @garrettwilkin.</p>');
-      response.write('<p>');
-      response.write('<ul>');
-      response.write('<li>Establish form for entry of LastFM username</li>');
-      response.write('<li>Use entered username to contact last to retrieve the user\'s loved tracks.</li>');
-      response.write('<li>For each loved track, look up the corresponding iTunes album.</li>');
-      response.write('<li>Add storage of loved tracks and iTunes album information.</li>');
-      response.write('</ul>');
-      response.write('</p>');
-      response.write('<p>Let the testing begin...</p>');
-      response.write('<p></p>');
-
-      response.write('');
-
-      contactLastFM(response);
-      
-      response.write('');
-      response.write('');
-    } else {
-      response.write('Welcome to Albumtross');
-    }
-
-    response.end();
-
-    //Commenting out response.end() allows the album art to 
-    //pop into the page when the callbacks complete!
-    //response.end();
-
-    if (path != '/favicon.ico') {
-      lastPath = path;
-    }
-  }, 5000);
+  if (path == '/') {
+    contactLastFM(response);
+    
+  } else {
+    response.write('Welcome to Albumtross');
+  }
+   */
+  request.addListener('end', function() {
+    fileServer.serve(request, response);
+    console.log('proudly serving static files since 2011');
+  });
 };
 runInSafeUid(launch);

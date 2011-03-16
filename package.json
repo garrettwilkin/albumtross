@@ -1,0 +1,22 @@
+{
+  "name":"albumtross",
+  "description":"Albumtross:  Where Garrett flexes his Node skillz",
+  "keywords":["development"],
+  "version":"0.0.1",
+  "author":"Garrett Wilkin <garrett.wilkin@gmail.com>",
+  "repository":
+   { "type":"git",
+     "url":"git://github.com/garrettwilkin/albumtross.git"
+   },
+  "bugs" :
+  { "mail":"garrett.wilkin@gmail.com"
+  },
+  "main":"begin.js",
+  "directories":
+   { "images" : "./img"
+   },
+  "dependencies": {
+    "node-static":">= 0.5.3"
+  },
+  "engines":{"node":">= 0.4.1"},
+}
