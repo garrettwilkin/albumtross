@@ -9,15 +9,22 @@ var fileServer = new static.Server();
 var http = require('http');
 var url = require('url');
 
+
 var nonRootUser = 'garrett';
 var standardHttpPort = 80;
 var lastPath = '';
+var everyone = ''; //will be returned by runInSafeUid
 
 function runInSafeUid(callback) {
     var state = 'success';
     try {
+        //Initialize http server
         var server = http.createServer(handleWebRequest);
         server.listen(standardHttpPort);
+        //Initialize now package
+        var everyone = require("now").initialize(server);
+        everyone.now.msg = "Now, Hello World";
+        //Change to non root user ID.
         process.setuid(nonRootUser);
         var uid = process.getuid();
         console.log('Running as user: ' + nonRootUser + ' UID: ' + uid + ' on port ' + standardHttpPort);
@@ -26,6 +33,7 @@ function runInSafeUid(callback) {
         state = 'error';
     };
     callback(state);
+    return everyone;
 };
 
 function launch(state) {
@@ -37,29 +45,20 @@ function launch(state) {
     }
 };
 
-function contactLastFM(response) {
-    console.log('Contacting Last.fm ... Soon!');
-};
-
 function handleWebRequest(request, response) {
-  /*
-   * Ye Olde Code
-  var responseHeaders  = {
-    'Content-Type': 'text/html'
-  };
-  response.writeHead(200, responseHeaders);
-  var path = url.parse(request.url).pathname;
-  
-  if (path == '/') {
-    contactLastFM(response);
-    
-  } else {
-    response.write('Welcome to Albumtross');
-  }
-   */
+
+  //Initialize static file serving.
   request.addListener('end', function() {
     fileServer.serve(request, response);
     console.log('proudly serving static files since 2011');
   });
+
 };
-runInSafeUid(launch);
+
+var everyone = runInSafeUid(launch);
+
+everyone.now.contactLastFM = function (username) {
+    console.log(username + ' would like ot contact Last.fm, how lovely.');
+};
+
+console.log('All JS code loaded');
