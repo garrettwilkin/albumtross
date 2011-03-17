@@ -15,6 +15,20 @@ var standardHttpPort = 80;
 var lastPath = '';
 var everyone = ''; //will be returned by runInSafeUid
 
+var winston = require('winston');
+var logger = new (winston.Logger)({
+  transports: [
+    new (winston.transports.Console)(),
+    new (winston.transports.File)({filename: 'Albumtross.log'}),
+    new (winston.transports.Loggly)({'subdomain':'albumtross',
+                                     'inputToken':'555b08e5-6a66-4698-9e87-2bfefa9001f4',
+                                     'auth': {
+                                       'username':'garrettwilkin',
+                                       'password':'love2loggly'}
+                                    }),
+  ]
+});
+
 function runInSafeUid(callback) {
     var state = 'success';
     try {
@@ -27,10 +41,11 @@ function runInSafeUid(callback) {
         //Change to non root user ID.
         process.setuid(nonRootUser);
         var uid = process.getuid();
-        console.log('Running as user: ' + nonRootUser + ' UID: ' + uid + ' on port ' + standardHttpPort);
+        logger.info('Running as user: ' + nonRootUser + ' UID: ' + uid + ' on port ' + standardHttpPort);
     }
     catch (err) {
         state = 'error';
+        console.log(err);
     };
     callback(state);
     return everyone;
@@ -38,9 +53,9 @@ function runInSafeUid(callback) {
 
 function launch(state) {
     if (state == 'success') {
-        console.log('successful launch');
+        logger.info('successful launch');
     } else {
-        console.log('Initialization Error');
+        logger.info('Initialization Error');
         process.exit(1);
     }
 };
@@ -50,7 +65,7 @@ function handleWebRequest(request, response) {
   //Initialize static file serving.
   request.addListener('end', function() {
     fileServer.serve(request, response);
-    console.log('proudly serving static files since 2011');
+    logger.info('proudly serving static files since 2011');
   });
 
 };
@@ -58,15 +73,15 @@ function handleWebRequest(request, response) {
 var everyone = runInSafeUid(launch);
 
 everyone.now.contactLastFM = function (username) {
-    console.log(username + ' would like ot contact Last.fm, how lovely.');
+    logger.info(username + ' would like ot contact Last.fm, how lovely.');
 };
 
 everyone.connected(function(){
-  console.log('client connected');
+  logger.info('client connected');
 });
 
 everyone.disconnected(function(){
-  console.log('client disconnected');
+  logger.info('client disconnected');
 });
 
-console.log('All JS code loaded');
+logger.info('All JS code loaded');
