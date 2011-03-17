@@ -16,10 +16,17 @@ var lastPath = '';
 var everyone = ''; //will be returned by runInSafeUid
 
 var winston = require('winston');
+//filenaming scheme
+var log = new Object();
+log.path = 'logs/';
+log.uniquer =  new Date().getTime();
+log.moniker = 'Albumtross_';
+log.extension = '.log'
+log.filename =  log.path + log.moniker + log.uniquer + log.extension;
 var logger = new (winston.Logger)({
   transports: [
     new (winston.transports.Console)(),
-    new (winston.transports.File)({filename: 'Albumtross.log'}),
+    new (winston.transports.File)({filename: log.filename}),
     new (winston.transports.Loggly)({'subdomain':'albumtross',
                                      'inputToken':'555b08e5-6a66-4698-9e87-2bfefa9001f4',
                                      'auth': {
@@ -62,10 +69,17 @@ function launch(state) {
 
 function handleWebRequest(request, response) {
 
-  //Initialize static file serving.
   request.addListener('end', function() {
+
+    //Initialize static file serving.
     fileServer.serve(request, response);
-    logger.info('proudly serving static files since 2011');
+
+    //Drop breadcrumbs in the log.
+    logger.info('Serving a static file with pride');
+    var mth =  request.method;
+    var url = request.url;
+    logger.info(mth + ' ' + url);
+
   });
 
 };
@@ -73,7 +87,7 @@ function handleWebRequest(request, response) {
 var everyone = runInSafeUid(launch);
 
 everyone.now.contactLastFM = function (username) {
-    logger.info(username + ' would like ot contact Last.fm, how lovely.');
+    logger.info(username + ' would like to contact Last.fm, how lovely.');
 };
 
 everyone.connected(function(){
