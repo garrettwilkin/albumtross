@@ -61,4 +61,12 @@ everyone.now.contactLastFM = function (username) {
     console.log(username + ' would like ot contact Last.fm, how lovely.');
 };
 
+everyone.connected(function(){
+  console.log('client connected');
+});
+
+everyone.disconnected(function(){
+  console.log('client disconnected');
+});
+
 console.log('All JS code loaded');
