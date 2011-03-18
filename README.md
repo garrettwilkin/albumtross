@@ -1,5 +1,24 @@
-iFM
+Albumtross
 ===
-A WebApp to be hosted on Nodester and to demonstrate and refine the iTunes package.
+A WebApp to demonstrate and refine the iTunes package.
 
-This is open source because it needs to be for publication on Nodester.  It is really a little exercise for myself.
+It is really a little exercise for myself.
+
+Technology used so far:
+
+*   Javascript
+ 
+*   NodeJS
+
+*   NowJS
+
+*   jQuery
+
+Services:
+
+*   Loggly
+
+APIs:
+
+*   None!  iTunes and LastFM coming soon!
+

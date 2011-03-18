@@ -22,12 +22,12 @@ var http = require('http');
 var url = require('url');
 
 /* Removing to track bugs down
-var lastFmNode = require('lastfm').LastFmNode;
-var lastfm = new LastFmNode({
-  api_key: '27e91fc2f101fcce011e257b2486c5',
-  secret: '6c7fd2fff01c4ce49321ab0598ab03'
-});
 */
+var LastFmNode = require('lastfm').LastFmNode;
+var lastfm = new LastFmNode({
+  api_key: config.fm_key,
+  secret: config.fm_secret
+});
 
 var nonRootUser = 'garrett';
 var standardHttpPort = 80;
@@ -109,15 +109,16 @@ everyone.now.contactLastFM = function (username) {
     logger.info(username + ' would like to contact Last.fm, how lovely.');
 
     /* Removing to track bugs down.
+    */
     
     var request = lastfm.read({method: 'user.getLovedTracks', user: username, limit: 10});
     request.on('success',function(data){
         logger.info('YAY! LastFm returns success for ' + username);
+        logger.info('LastFm says : ' + JSON.stringify(data));
     });
     request.on('error',function(data){
         logger.info('BOO! LastFm returns error for ' + username);
     });
-    */
 };
 
 everyone.connected(function(){
