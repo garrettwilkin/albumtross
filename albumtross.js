@@ -3,12 +3,31 @@
  * Created as a way to unit test the iTunes api @
  *   git@github.com:garrettwilkin/iTunes.git
  */
+require.paths.unshift(require('path').join(__dirname));
+
+//Configuration for albumtross
+var config = require('config')('albumtross', {
+  api_key : '123456',
+  secret  : 'dontell',
+  lg_user : 'balthazar'
+});
+
+function albumtross() {
+};
+exports.albumtross = albumtross;
 
 var static = require('node-static');
 var fileServer = new static.Server();
 var http = require('http');
 var url = require('url');
 
+/* Removing to track bugs down
+var lastFmNode = require('lastfm').LastFmNode;
+var lastfm = new LastFmNode({
+  api_key: '27e91fc2f101fcce011e257b2486c5',
+  secret: '6c7fd2fff01c4ce49321ab0598ab03'
+});
+*/
 
 var nonRootUser = 'garrett';
 var standardHttpPort = 80;
@@ -27,11 +46,11 @@ var logger = new (winston.Logger)({
   transports: [
     new (winston.transports.Console)(),
     new (winston.transports.File)({filename: log.filename}),
-    new (winston.transports.Loggly)({'subdomain':'albumtross',
-                                     'inputToken':'555b08e5-6a66-4698-9e87-2bfefa9001f4',
+    new (winston.transports.Loggly)({'subdomain':config.lg_subdomain,
+                                     'inputToken':config.lg_key,
                                      'auth': {
-                                       'username':'garrettwilkin',
-                                       'password':'love2loggly'}
+                                       'username':config.lg_user,
+                                       'password':config.lg_password}
                                     }),
   ]
 });
@@ -88,6 +107,17 @@ var everyone = runInSafeUid(launch);
 
 everyone.now.contactLastFM = function (username) {
     logger.info(username + ' would like to contact Last.fm, how lovely.');
+
+    /* Removing to track bugs down.
+    
+    var request = lastfm.read({method: 'user.getLovedTracks', user: username, limit: 10});
+    request.on('success',function(data){
+        logger.info('YAY! LastFm returns success for ' + username);
+    });
+    request.on('error',function(data){
+        logger.info('BOO! LastFm returns error for ' + username);
+    });
+    */
 };
 
 everyone.connected(function(){
@@ -97,5 +127,7 @@ everyone.connected(function(){
 everyone.disconnected(function(){
   logger.info('client disconnected');
 });
+
+logger.info('Configuration: '  + config.lg_user);
 
 logger.info('All JS code loaded');
