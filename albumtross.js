@@ -98,7 +98,7 @@ function runInSafeUid(callback) {
     }
     catch (err) {
         state = 'error';
-        console.log(err);
+        logger.info(err);
     };
     callback(state);
     return everyone;
@@ -131,10 +131,11 @@ function fmArtist(artist) {
 
 function iTrackHandler(error,itrack) {
   if (error) {
-    console.log('iTrackHandler : Could not find track' );
+    logger.info('iTrackHandler : Could not find track' );
   } else {
-    console.log('iTrackHandler : success!!');
-    console.log('iTrackHandler : itrack: ' + itrack.name + ' by artist ' + itrack.artistName);
+    //logger.info('iTrackHandler : success!!');
+    //logger.info('iTrackHandler : itrack Full: ' + JSON.stringify(itrack));
+    logger.info('iTrackHandler : itrack: ' + itrack.name + ' by artist ' + itrack.artist);
   };
 
 };
@@ -156,7 +157,7 @@ function lastFmHandler(type,data) {
       {
           var track = new fmTrack(tracks[i]);
           var artist = new fmArtist(track.artist);
-          logger.info('Loved Track: ' + track.name + ' by ' + artist.name);
+          logger.info('lastFmHandler : ' + track.name + ' by ' + artist.name);
           itunesClient.lookupTrack({artist: artist.name, track: track.name},iTrackHandler);
       }
       break;
@@ -180,10 +181,10 @@ everyone.now.contactLastFM = function (username) {
     /* Removing to track bugs down.
     */
     
-    var request = lastfm.read({method: 'user.getLovedTracks', user: username, limit: 5});
+    var request = lastfm.read({method: 'user.getLovedTracks', user: username, limit: 50});
     request.on('success',function(data){
         logger.info('YAY! LastFm returns success for ' + username);
-        logger.info('LastFm says : ' + data);
+        //logger.info('LastFm says : ' + data);
         lastFmHandler('lovedtracks',data);
     });
     request.on('error',function(data){
