@@ -14,12 +14,15 @@
   "main":"begin.js",
   "directories":
    { "images" : "./img"
+     "utilities" : "./util"
    },
-  "dependencies": {
+  "dependencies": 
+   {
     "node-static":">= 0.5.3",
     "forever":">= 0.4.1",
     "winston":">= 0.2.5",
     "config":"*",
+    "node-xml":"*",
     "now":">= 0.2.0"
   },
   "engines":{"node":">= 0.4.1"}

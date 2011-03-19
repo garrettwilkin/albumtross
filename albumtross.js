@@ -3,7 +3,9 @@
  * Created as a way to unit test the iTunes api @
  *   git@github.com:garrettwilkin/iTunes.git
  */
+//require.paths.unshift(require('path').join(__dirname));
 require.paths.unshift(require('path').join(__dirname));
+
 
 //Configuration for albumtross
 var config = require('config')('albumtross', {
@@ -12,17 +14,19 @@ var config = require('config')('albumtross', {
   lg_user : 'balthazar'
 });
 
+//module created to facilitate configuration module.
 function albumtross() {
 };
 exports.albumtross = albumtross;
 
+//static file serving
 var static = require('node-static');
 var fileServer = new static.Server();
+
+//standard modules
 var http = require('http');
 var url = require('url');
 
-/* Removing to track bugs down
-*/
 var LastFmNode = require('lastfm').LastFmNode;
 var lastfm = new LastFmNode({
   api_key: config.fm_key,
@@ -34,6 +38,7 @@ var standardHttpPort = 80;
 var lastPath = '';
 var everyone = ''; //will be returned by runInSafeUid
 
+//logging with winston
 var winston = require('winston');
 //filenaming scheme
 var log = new Object();
@@ -54,6 +59,23 @@ var logger = new (winston.Logger)({
                                     }),
   ]
 });
+
+function handleWebRequest(request, response) {
+
+  request.addListener('end', function() {
+
+    //Initialize static file serving.
+    fileServer.serve(request, response);
+
+    //Drop breadcrumbs in the log.
+    logger.info('Serving a static file with pride');
+    var mth =  request.method;
+    var url = request.url;
+    logger.info(mth + ' ' + url);
+
+  });
+
+};
 
 function runInSafeUid(callback) {
     var state = 'success';
@@ -86,23 +108,54 @@ function launch(state) {
     }
 };
 
-function handleWebRequest(request, response) {
+function fmTrack(track) {
+  this.name = track.name ;
+  this.mbid = track.mbid; //musicbrainz.org unique ID.
+  this.url = track.url;
+  this.datetime = track.date; //array of two
+  this.artist = track.artist; //datatype of its own
+  this.image = track.image;   //array of 3-4
+  this.streamable = track.streamable; //array of 2
+}
 
-  request.addListener('end', function() {
+function fmArtist(artist) {
+  this.name = artist.name;
+  this.mbid = artist.mbid;
+  this.url = artist.url;
+}
 
-    //Initialize static file serving.
-    fileServer.serve(request, response);
-
-    //Drop breadcrumbs in the log.
-    logger.info('Serving a static file with pride');
-    var mth =  request.method;
-    var url = request.url;
-    logger.info(mth + ' ' + url);
-
-  });
+function lastFmHandler(type,data) {
+  /* Maybe XML conversion isnt needed after all.
+  var xml2 = require('util/node-xml2object/lib/xml2object');
+  var parsed = xml2.parseString(data);
+  logger.info('I\'ll make a JSON outta you! ' + JSON.stringify(parsed));
+  */
+  
+  switch(type)
+  {
+    case 'lovedtracks':
+      //logger.info('lastFmHandler: lovedtracks');
+      var lovey = JSON.parse(data);
+      var tracks = lovey.lovedtracks.track;
+      for (i in tracks) 
+      {
+          var track = new fmTrack(tracks[i]);
+          var artist = new fmArtist(track.artist);
+          logger.info('Loved Track: ' + track.name + ' by ' + artist.name);
+      }
+      break;
+    default:
+      logger.info('lastFmHandler: Unknown data Type');
+  }
 
 };
 
+
+//Now.js code.  
+//everyone must be created with the same server object created
+//and used inside runInSafeUid. This was not elegant, but rather
+//that refactor the code I just returned the everyone variable
+//after the Now initialization.
 var everyone = runInSafeUid(launch);
 
 everyone.now.contactLastFM = function (username) {
@@ -111,10 +164,11 @@ everyone.now.contactLastFM = function (username) {
     /* Removing to track bugs down.
     */
     
-    var request = lastfm.read({method: 'user.getLovedTracks', user: username, limit: 10});
+    var request = lastfm.read({method: 'user.getLovedTracks', user: username, limit: 100});
     request.on('success',function(data){
         logger.info('YAY! LastFm returns success for ' + username);
-        logger.info('LastFm says : ' + JSON.stringify(data));
+        logger.info('LastFm says : ' + data);
+        lastFmHandler('lovedtracks',data);
     });
     request.on('error',function(data){
         logger.info('BOO! LastFm returns error for ' + username);
