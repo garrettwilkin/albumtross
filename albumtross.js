@@ -27,11 +27,16 @@ var fileServer = new static.Server();
 var http = require('http');
 var url = require('url');
 
+//LastFm module
 var LastFmNode = require('lastfm').LastFmNode;
 var lastfm = new LastFmNode({
   api_key: config.fm_key,
   secret: config.fm_secret
 });
+
+//iTunes module
+var iTunes = require('itunes').iTunes;
+var itunesClient = new iTunes();
 
 var nonRootUser = 'garrett';
 var standardHttpPort = 80;
@@ -116,13 +121,23 @@ function fmTrack(track) {
   this.artist = track.artist; //datatype of its own
   this.image = track.image;   //array of 3-4
   this.streamable = track.streamable; //array of 2
-}
+};
 
 function fmArtist(artist) {
   this.name = artist.name;
   this.mbid = artist.mbid;
   this.url = artist.url;
-}
+};
+
+function iTrackHandler(error,itrack) {
+  if (error) {
+    console.log('iTrackHandler : Could not find track' );
+  } else {
+    console.log('iTrackHandler : success!!');
+    console.log('iTrackHandler : itrack: ' + itrack.name + ' by artist ' + itrack.artistName);
+  };
+
+};
 
 function lastFmHandler(type,data) {
   /* Maybe XML conversion isnt needed after all.
@@ -142,6 +157,7 @@ function lastFmHandler(type,data) {
           var track = new fmTrack(tracks[i]);
           var artist = new fmArtist(track.artist);
           logger.info('Loved Track: ' + track.name + ' by ' + artist.name);
+          itunesClient.lookupTrack({artist: artist.name, track: track.name},iTrackHandler);
       }
       break;
     default:
@@ -164,7 +180,7 @@ everyone.now.contactLastFM = function (username) {
     /* Removing to track bugs down.
     */
     
-    var request = lastfm.read({method: 'user.getLovedTracks', user: username, limit: 100});
+    var request = lastfm.read({method: 'user.getLovedTracks', user: username, limit: 5});
     request.on('success',function(data){
         logger.info('YAY! LastFm returns success for ' + username);
         logger.info('LastFm says : ' + data);
