@@ -140,7 +140,7 @@ function iTrackHandler(error,itrack) {
 
 };
 
-function lastFmHandler(type,data) {
+function lastFmHandler(type,data,handler) {
   /* Maybe XML conversion isnt needed after all.
   var xml2 = require('util/node-xml2object/lib/xml2object');
   var parsed = xml2.parseString(data);
@@ -153,12 +153,13 @@ function lastFmHandler(type,data) {
       //logger.info('lastFmHandler: lovedtracks');
       var lovey = JSON.parse(data);
       var tracks = lovey.lovedtracks.track;
-      for (i in tracks) 
+      for (var i in tracks) 
       {
           var track = new fmTrack(tracks[i]);
           var artist = new fmArtist(track.artist);
           logger.info('lastFmHandler : ' + track.name + ' by ' + artist.name);
-          itunesClient.lookupTrack({artist: artist.name, track: track.name},iTrackHandler);
+          logger.info('lastFmHandler : track JSON : ' + JSON.stringify(track));
+          itunesClient.lookupTrack({artist: artist.name, track: track.name},handler);
       }
       break;
     default:
@@ -175,7 +176,7 @@ function lastFmHandler(type,data) {
 //after the Now initialization.
 var everyone = runInSafeUid(launch);
 
-everyone.now.contactLastFM = function (username) {
+everyone.now.contactLastFM = function (username,callback) {
     logger.info(username + ' would like to contact Last.fm, how lovely.');
 
     /* Removing to track bugs down.
@@ -185,7 +186,9 @@ everyone.now.contactLastFM = function (username) {
     request.on('success',function(data){
         logger.info('YAY! LastFm returns success for ' + username);
         //logger.info('LastFm says : ' + data);
-        lastFmHandler('lovedtracks',data);
+        lastFmHandler('lovedtracks',data,function(error,track){
+            everyone.now.showTrack(error,track);
+        });
     });
     request.on('error',function(data){
         logger.info('BOO! LastFm returns error for ' + username);
