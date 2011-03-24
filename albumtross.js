@@ -129,23 +129,20 @@ function fmArtist(artist) {
   this.url = artist.url;
 };
 
-function iTrackHandler(error,itrack) {
+function iTrackHandler(error,lastfmTrack,iTrack) {
   if (error) {
     logger.info('iTrackHandler : Could not find track' );
   } else {
     //logger.info('iTrackHandler : success!!');
     //logger.info('iTrackHandler : itrack Full: ' + JSON.stringify(itrack));
-    logger.info('iTrackHandler : itrack: ' + itrack.name + ' by artist ' + itrack.artist);
+    logger.info('iTrackHandler :      iTrack: ' + iTrack.name + ' by artist ' + iTrack.artist + ' id : ' + iTrack.id);
+    logger.info('iTrackHandler : lastfmTrack: ' + lastfmTrack.name + ' by artist ' + lastfmTrack.artist.name + ' mbid : ' + lastfmTrack.mbid);
+    everyone.now.showTrack(error,lastfmTrack,iTrack);
   };
 
 };
 
 function lastFmHandler(type,data,handler) {
-  /* Maybe XML conversion isnt needed after all.
-  var xml2 = require('util/node-xml2object/lib/xml2object');
-  var parsed = xml2.parseString(data);
-  logger.info('I\'ll make a JSON outta you! ' + JSON.stringify(parsed));
-  */
   
   switch(type)
   {
@@ -153,14 +150,14 @@ function lastFmHandler(type,data,handler) {
       //logger.info('lastFmHandler: lovedtracks');
       var lovey = JSON.parse(data);
       var tracks = lovey.lovedtracks.track;
-      for (var i in tracks) 
-      {
-          var track = new fmTrack(tracks[i]);
+      tracks.forEach(function(track) {
           var artist = new fmArtist(track.artist);
           logger.info('lastFmHandler : ' + track.name + ' by ' + artist.name);
           logger.info('lastFmHandler : track JSON : ' + JSON.stringify(track));
-          itunesClient.lookupTrack({artist: artist.name, track: track.name},handler);
-      }
+          itunesClient.lookupTrack({artist: artist.name, track: track.name},function(error,itrack) {
+              handler(error,track,itrack);
+            });
+      });
       break;
     default:
       logger.info('lastFmHandler: Unknown data Type');
@@ -186,12 +183,13 @@ everyone.now.contactLastFM = function (username,callback) {
     request.on('success',function(data){
         logger.info('YAY! LastFm returns success for ' + username);
         //logger.info('LastFm says : ' + data);
-        lastFmHandler('lovedtracks',data,function(error,track){
-            everyone.now.showTrack(error,track);
+        lastFmHandler('lovedtracks',data,function(error,track,itrack){
+            iTrackHandler(error,track,itrack);
         });
     });
     request.on('error',function(data){
-        logger.info('BOO! LastFm returns error for ' + username);
+        logger.error('BOO! LastFm returns error for ' + username);
+        logger.error('LastFm error for ' + username + ' \n' + data);
     });
 };
 

@@ -13,7 +13,7 @@
   },
   "main":"begin.js",
   "directories":
-   { "images" : "./img"
+   { "images" : "./img",
      "utilities" : "./util"
    },
   "dependencies": 
@@ -23,6 +23,8 @@
     "winston":">= 0.2.5",
     "config":"*",
     "node-xml":"*",
+    "last-fm":"*",
+    "node-inspector":"*",
     "now":">= 0.2.0"
   },
   "engines":{"node":">= 0.4.1"}

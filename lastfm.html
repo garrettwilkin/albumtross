@@ -2,16 +2,22 @@
 <head>
   <title>Albumtross - Testing iTunes API with lastFm data</title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> 
-  <script src='http://albumtross.be:80/nowjs/now.js'></script>
+  <script src='/nowjs/now.js'></script>
   <script>
     $(document).ready(function() {
-        $('#submit').click(function() {
-          now.contactLastFM($('#username').val());
-          $('#username').val('');
-        });
+      $('#submit').click(function() {
+        now.contactLastFM($('#username').val());
+        $('#username').val('');
+      });
     });
-    now.showTrack = function (error, track) {
-        console.log(track);
+    now.showTrack = function (error, lastfmTrack, iTrack) {
+      if (error) {
+        console.log('track could not be found');
+      } else {
+        console.log('     iTrack: ' + iTrack.name + ' by artist ' + iTrack.artist + ' id : ' + iTrack.id);
+        console.log('lastfmTrack: ' + lastfmTrack.name + ' by artist ' + lastfmTrack.artist.name + ' mbid : ' + lastfmTrack.mbid);
+        console.log('---------------------');
+      }
     };
   </script>
 </head>
