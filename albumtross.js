@@ -142,7 +142,20 @@ function iTrackHandler(error,lastfmTrack,iTrack) {
 
 };
 
-function lastFmHandler(type,data,handler) {
+function iArtistHandler(error,iArtist) {
+  if (error) {
+    logger.info('iArtistHandler: Could not find track' );
+  } else {
+    //logger.info('iArtistHandler: success!!');
+    //logger.info('iArtistHandler: iArtist Full: ' + JSON.stringify(iArtist));
+    logger.info('iArtistHandler:      iArtist: ' + iArtist.artistName );
+    everyone.now.showArtist(error,iArtist);
+  };
+
+};
+
+function lastFmHandler(type,data,trackHandler,artistHandler) {
+//Add Artist function to demo code from pdjk.
   
   switch(type)
   {
@@ -153,9 +166,12 @@ function lastFmHandler(type,data,handler) {
       tracks.forEach(function(track) {
           var artist = new fmArtist(track.artist);
           logger.info('lastFmHandler : ' + track.name + ' by ' + artist.name);
-          logger.info('lastFmHandler : track JSON : ' + JSON.stringify(track));
+         // logger.info('lastFmHandler : track JSON : ' + JSON.stringify(track));
           itunesClient.lookupTrack({artist: artist.name, track: track.name},function(error,itrack) {
-              handler(error,track,itrack);
+              trackHandler(error,track,itrack);
+            });
+          itunesClient.lookupArtist({artist: artist.name},function(error,iartist) {
+              artistHandler(error,iartist);
             });
       });
       break;
@@ -179,12 +195,15 @@ everyone.now.contactLastFM = function (username,callback) {
     /* Removing to track bugs down.
     */
     
-    var request = lastfm.read({method: 'user.getLovedTracks', user: username, limit: 50});
+    var request = lastfm.read({method: 'user.getLovedTracks', user: username, limit: 20});
     request.on('success',function(data){
         logger.info('YAY! LastFm returns success for ' + username);
         //logger.info('LastFm says : ' + data);
-        lastFmHandler('lovedtracks',data,function(error,track,itrack){
+        lastFmHandler('lovedtracks',data,function(error,track,itrack) {
             iTrackHandler(error,track,itrack);
+        },
+        function(error,iartist) {
+            iArtistHandler(error,iartist);
         });
     });
     request.on('error',function(data){
