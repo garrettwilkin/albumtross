@@ -17,6 +17,15 @@
         console.log('     iTrack: ' + iTrack.name + ' by artist ' + iTrack.artist + ' id : ' + iTrack.id);
         console.log('lastfmTrack: ' + lastfmTrack.name + ' by artist ' + lastfmTrack.artist.name + ' mbid : ' + lastfmTrack.mbid);
         console.log('---------------------');
+        $('trophyCase').html('Watermelon.');
+      }
+    };
+    now.showArtist = function (error, iArtist) {
+      if (error) {
+        console.log('Artist could not be found');
+      } else {
+        console.log('     iArtist: ' + iArtist.artistName);
+        console.log('---------------------');
       }
     };
   </script>
@@ -30,9 +39,14 @@
   <p><h3>LastFM loved tracks as a test set for the iTunes API node library</h3>
     <h5>@ <a href='https://github.com/garrettwilkin/iTunes'>https://github.com/garrettwilkin/iTunes</a>.</h5>
     <form>
-      Lasfm Username: <input type='text' name='username' id='username'/><input type='button' value='Go' id='submit'/>
+      Lasfm Username: <input type='text' name='username' id='username' value='garrettwilkin'/><input type='button' value='Go' id='submit'/>
     </form>
     To Do:
+    <ul>
+    <li>Add display of DIVs for information retrieved from meta data APIs using jQuery.</li>
+    <li>Add storage of loved tracks and iTunes album information.</li>
+    </ul>
+    Done!
     <ul>
     <li>Establish form for entry of LastFM username</li>
     <li>Use entered username to contact last to retrieve the user\'s loved tracks.</li>
@@ -41,6 +55,9 @@
     </ul>
   </p>
   <p>Let the testing begin...</p>
+  <div name='trophyCase' id='trophyCase'>
+    The Trophy Case displays all our results:
+  </div>
   <p></p>
 </body>
 </html>
