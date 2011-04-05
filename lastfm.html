@@ -17,27 +17,15 @@
         console.log('     iTrack: ' + iTrack.name + ' by artist ' + iTrack.artist + ' id : ' + iTrack.id);
         console.log('lastfmTrack: ' + lastfmTrack.name + ' by artist ' + lastfmTrack.artist.name + ' mbid : ' + lastfmTrack.mbid);
         console.log('---------------------');
-        // var trackInfo = '<div id="' + iTrack.id + '">' + iTrack.name + '</div>';
-        // $('#trophyCase').html(trackInfo);
-        //var starter = '<div id="' + iTrack.id + '">';
-        var starter = '<div id="tracks">';
-        console.log(starter);
+        var starter = '<div id="' + iTrack.id + '">';
         var desc = iTrack.name;
-        console.log(desc);
         var imgUrl = iTrack.artworkUrl60;
-        console.log(imgUrl);
         var imageBoo = '<img src="' + imgUrl + '">';
-        console.log(imageBoo);
-        console.log('11111111111');
         var content = imageBoo + ' ' + desc;
-        console.log(content);
-        console.log('22222222222');
         var closer = '</div>';
-        console.log(closer);
         var trackInfo = starter + content + closer;
-        console.log(trackInfo);
         //$('#trophyCase').before(trackInfo).slideDown(300);
-        $('#tracks').before(trackInfo).slideDown(300);
+        $('#tracks').before(trackInfo);
       }
     };
     now.showArtist = function (error, iArtist) {
