@@ -163,17 +163,19 @@ function lastFmHandler(type,data,trackHandler,artistHandler) {
       //logger.info('lastFmHandler: lovedtracks');
       var lovey = JSON.parse(data);
       var tracks = lovey.lovedtracks.track;
-      tracks.forEach(function(track) {
-          var artist = new fmArtist(track.artist);
-          logger.info('lastFmHandler : ' + track.name + ' by ' + artist.name);
-         // logger.info('lastFmHandler : track JSON : ' + JSON.stringify(track));
-          itunesClient.lookupTrack({artist: artist.name, track: track.name},function(error,itrack) {
-              trackHandler(error,track,itrack);
-            });
-          itunesClient.lookupArtist({artist: artist.name},function(error,iartist) {
-              artistHandler(error,iartist);
-            });
-      });
+      if (tracks != undefined) {
+       tracks.forEach(function(track) {
+           var artist = new fmArtist(track.artist);
+           logger.info('lastFmHandler : ' + track.name + ' by ' + artist.name);
+          // logger.info('lastFmHandler : track JSON : ' + JSON.stringify(track));
+           itunesClient.lookupTrack({artist: artist.name, track: track.name},function(error,itrack) {
+               trackHandler(error,track,itrack);
+             });
+           itunesClient.lookupArtist({artist: artist.name},function(error,iartist) {
+               artistHandler(error,iartist);
+             });
+       });
+      };
       break;
     default:
       logger.info('lastFmHandler: Unknown data Type');
@@ -190,26 +192,28 @@ function lastFmHandler(type,data,trackHandler,artistHandler) {
 var everyone = runInSafeUid(launch);
 
 everyone.now.contactLastFM = function (username,callback) {
-    logger.info(username + ' would like to contact Last.fm, how lovely.');
+    if (username != undefined) {
+     logger.info(username + ' would like to contact Last.fm, how lovely.');
 
-    /* Removing to track bugs down.
-    */
-    
-    var request = lastfm.read({method: 'user.getLovedTracks', user: username, limit: 20});
-    request.on('success',function(data){
-        logger.info('YAY! LastFm returns success for ' + username);
-        //logger.info('LastFm says : ' + data);
-        lastFmHandler('lovedtracks',data,function(error,track,itrack) {
-            iTrackHandler(error,track,itrack);
-        },
-        function(error,iartist) {
-            iArtistHandler(error,iartist);
-        });
-    });
-    request.on('error',function(data){
-        logger.error('BOO! LastFm returns error for ' + username);
-        logger.error('LastFm error for ' + username + ' \n' + data);
-    });
+     /* Removing to track bugs down.
+     */
+     
+     var request = lastfm.read({method: 'user.getLovedTracks', user: username, limit: 20});
+     request.on('success',function(data){
+         logger.info('YAY! LastFm returns success for ' + username);
+         //logger.info('LastFm says : ' + data);
+         lastFmHandler('lovedtracks',data,function(error,track,itrack) {
+             iTrackHandler(error,track,itrack);
+         },
+         function(error,iartist) {
+             iArtistHandler(error,iartist);
+         });
+     });
+     request.on('error',function(data){
+         logger.error('BOO! LastFm returns error for ' + username);
+         logger.error('LastFm error for ' + username + ' \n' + data);
+     });
+    };
 };
 
 everyone.connected(function(){

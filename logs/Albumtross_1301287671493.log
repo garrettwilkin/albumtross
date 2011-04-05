@@ -1,0 +1,12 @@
+28 Mar 00:47:51 - info: Running as user: garrett UID: 1000 on port 80
+28 Mar 00:47:51 - info: successful launch
+28 Mar 00:47:51 - info: Configuration: garrettwilkin
+28 Mar 00:47:51 - info: All JS code loaded
+28 Mar 00:47:56 - info: Serving a static file with pride
+28 Mar 00:47:56 - info: GET /
+28 Mar 00:47:57 - info: Serving a static file with pride
+28 Mar 00:47:57 - info: GET /img/TheAlbumtross.png
+28 Mar 00:47:57 - info: Serving a static file with pride
+28 Mar 00:47:57 - info: GET /favicon.ico
+28 Mar 00:47:57 - info: Serving a static file with pride
+28 Mar 00:47:57 - info: GET /favicon.ico

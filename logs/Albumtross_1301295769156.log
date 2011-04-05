@@ -1,0 +1,93 @@
+28 Mar 03:02:49 - info: Running as user: garrett UID: 1000 on port 80
+28 Mar 03:02:49 - info: successful launch
+28 Mar 03:02:49 - info: Configuration: garrettwilkin
+28 Mar 03:02:49 - info: All JS code loaded
+28 Mar 03:02:56 - info: Serving a static file with pride
+28 Mar 03:02:56 - info: GET /lastfm.html?username=gar
+28 Mar 03:02:57 - info: Serving a static file with pride
+28 Mar 03:02:57 - info: GET /img/TheAlbumtross.png
+28 Mar 03:02:57 - info: Serving a static file with pride
+28 Mar 03:02:57 - info: GET /favicon.ico
+28 Mar 03:02:58 - info: client connected
+28 Mar 03:02:59 - info: garrettwilkin would like to contact Last.fm, how lovely.
+28 Mar 03:03:03 - info: YAY! LastFm returns success for garrettwilkin
+28 Mar 03:03:03 - info: lastFmHandler : Sophronie by Jimmy Martin
+28 Mar 03:03:03 - info: lastFmHandler : Border Ride by Jim and Jesse
+28 Mar 03:03:03 - info: lastFmHandler : Americano by The Brian Setzer Orchestra
+28 Mar 03:03:03 - info: lastFmHandler : Breeze Black Night by The Ditty Bops
+28 Mar 03:03:03 - info: lastFmHandler : Le Onde by Ludovico Einaudi
+28 Mar 03:03:03 - info: lastFmHandler : Am I Just One by Carey Ott
+28 Mar 03:03:03 - info: lastFmHandler : All These Things That I've Done by The Killers
+28 Mar 03:03:03 - info: lastFmHandler : The Box by Johnny Flynn
+28 Mar 03:03:03 - info: lastFmHandler : Sabre Dance by Արամ Խաչատրյան
+28 Mar 03:03:03 - info: lastFmHandler : C'mon Yeah by The Sunshine
+28 Mar 03:03:03 - info: lastFmHandler : Backfire at the Disco by The Wombats
+28 Mar 03:03:03 - info: lastFmHandler : Calloway Boogie by Big Bad Voodoo Daddy
+28 Mar 03:03:03 - info: lastFmHandler : Amanda Jewell by Ricky Skaggs
+28 Mar 03:03:03 - info: lastFmHandler : Float On by Iron Horse
+28 Mar 03:03:03 - info: lastFmHandler : Maybe Someday by The Cinematics
+28 Mar 03:03:03 - info: lastFmHandler : West Coast by Coconut Records
+28 Mar 03:03:03 - info: lastFmHandler : Only In The Past by The Be Good Tanyas
+28 Mar 03:03:03 - info: lastFmHandler : Starry Night by The Infamous Stringdusters
+28 Mar 03:03:03 - info: lastFmHandler : Stoney Creek by Tony Rice
+28 Mar 03:03:03 - info: lastFmHandler : Da Sneck o' Da Smaalie by Fiddlers' Bid
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Sophronie by artist Jimmy Martin id : 6765959
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Sophronie by artist Jimmy Martin mbid : 
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: Jim & Jesse
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: Carey Ott
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Breeze Black Night by artist The Ditty Bops id : 5499485
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Breeze Black Night by artist The Ditty Bops mbid : 
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: The Ditty Bops
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Sabre Dance by artist Franz Richter & Radio Orchestra Berlin id : 363276556
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Sabre Dance by artist Արամ Խաչատրյան mbid : 
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: Johnny Flynn
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Border Ride by artist Larry Keel & Natural Bridge id : 157686958
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Border Ride by artist Jim and Jesse mbid : 
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Calloway Boogie by artist Big Bad Voodoo Daddy id : 307629327
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Calloway Boogie by artist Big Bad Voodoo Daddy mbid : 
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: KC & The Sunshine Band
+28 Mar 03:03:03 - info: iArtistHandler: Could not find track
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: Ricky Skaggs
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Backfire At the Disco by artist The Wombats id : 278867773
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Backfire at the Disco by artist The Wombats mbid : 
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: The Brian Setzer Orchestra
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: C'Mon Yeah by artist The Sunshine id : 252980090
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: C'mon Yeah by artist The Sunshine mbid : 
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: undefined by artist undefined id : undefined
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: West Coast by artist Coconut Records mbid : 
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: All These Things That I've Done by artist The Killers id : 14268735
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: All These Things That I've Done by artist The Killers mbid : 
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: Fiddler's Bid
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Starry Night by artist Chris August id : 386543524
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Starry Night by artist The Infamous Stringdusters mbid : 
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: Tony Rice
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: The Killers
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Only In the Past by artist The Be Good Tanyas id : 412804372
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Only In The Past by artist The Be Good Tanyas mbid : 
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Bunny: The Trip to Pakistan/Da sneck o' da smaalie/The Bunny's H by artist Steampacket id : 160250628
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Da Sneck o' Da Smaalie by artist Fiddlers' Bid mbid : 
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: undefined by artist undefined id : undefined
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: The Box by artist Johnny Flynn mbid : 
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Le onde by artist Ludovico Einaudi id : 153362807
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Le Onde by artist Ludovico Einaudi mbid : 
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: The Cinematics
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: Jimmy Martin
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: Iron Horse
+28 Mar 03:03:03 - info: iArtistHandler:      iArtist: The Be Good Tanyas
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Maybe Someday by artist Black Stone Cherry id : 214472710
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Maybe Someday by artist The Cinematics mbid : 
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: undefined by artist undefined id : undefined
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Float On by artist Iron Horse mbid : 
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Amanda Jewell by artist Ricky Skaggs & Kentucky Thunder id : 259757918
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Amanda Jewell by artist Ricky Skaggs mbid : 
+28 Mar 03:03:03 - info: iTrackHandler :      iTrack: Stoney Creek by artist Tony Rice id : 2459032
+28 Mar 03:03:03 - info: iTrackHandler : lastfmTrack: Stoney Creek by artist Tony Rice mbid : 
+28 Mar 03:03:04 - info: iArtistHandler:      iArtist: Coconut Records
+28 Mar 03:03:04 - info: iArtistHandler:      iArtist: The Wombats
+28 Mar 03:03:04 - info: iTrackHandler :      iTrack: Am I Just One by artist Carey Ott id : 154808159
+28 Mar 03:03:04 - info: iTrackHandler : lastfmTrack: Am I Just One by artist Carey Ott mbid : 
+28 Mar 03:03:04 - info: iTrackHandler :      iTrack: undefined by artist undefined id : undefined
+28 Mar 03:03:04 - info: iTrackHandler : lastfmTrack: Americano by artist The Brian Setzer Orchestra mbid : 
+28 Mar 03:03:04 - info: iArtistHandler:      iArtist: Ludovico Einaudi
+28 Mar 03:03:04 - info: iArtistHandler:      iArtist: Big Bad Voodoo Daddy
+28 Mar 03:03:04 - info: iArtistHandler:      iArtist: The Infamous Stringdusters

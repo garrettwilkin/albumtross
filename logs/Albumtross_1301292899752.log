@@ -1,0 +1,151 @@
+28 Mar 02:14:59 - info: Running as user: garrett UID: 1000 on port 80
+28 Mar 02:14:59 - info: successful launch
+28 Mar 02:14:59 - info: Configuration: garrettwilkin
+28 Mar 02:14:59 - info: All JS code loaded
+28 Mar 02:15:01 - info: Serving a static file with pride
+28 Mar 02:15:01 - info: GET /lastfm.html
+28 Mar 02:15:02 - info: Serving a static file with pride
+28 Mar 02:15:02 - info: GET /img/TheAlbumtross.png
+28 Mar 02:15:03 - info: Serving a static file with pride
+28 Mar 02:15:03 - info: GET /favicon.ico
+28 Mar 02:15:03 - info: client connected
+28 Mar 02:15:05 - info: garrettwilkin would like to contact Last.fm, how lovely.
+28 Mar 02:15:07 - info: YAY! LastFm returns success for garrettwilkin
+28 Mar 02:15:07 - info: lastFmHandler : Sophronie by Jimmy Martin
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Sophronie","mbid":"","url":"http://www.last.fm/music/Jimmy+Martin/_/Sophronie","date":{"#text":"13 Mar 2011, 22:14","uts":"1300054453"},"artist":{"name":"Jimmy Martin","mbid":"ee850327-b528-4922-93e8-0c59a21ef50e","url":"http://www.last.fm/music/Jimmy+Martin"},"image":[{"#text":"http://images.amazon.com/images/P/B0000584VK.01.MZZZZZZZ.jpg","size":"small"},{"#text":"http://images.amazon.com/images/P/B0000584VK.01.MZZZZZZZ.jpg","size":"medium"},{"#text":"http://images.amazon.com/images/P/B0000584VK.01.MZZZZZZZ.jpg","size":"large"},{"#text":"http://images.amazon.com/images/P/B0000584VK.01.MZZZZZZZ.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Border Ride by Jim and Jesse
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Border Ride","mbid":"","url":"http://www.last.fm/music/Jim+and+Jesse/_/Border+Ride","date":{"#text":"10 Mar 2011, 15:15","uts":"1299770118"},"artist":{"name":"Jim and Jesse","mbid":"09410112-c24e-405d-a0d3-cbe5b737f3cb","url":"http://www.last.fm/music/Jim+and+Jesse"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/11967539.jpg","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/11967539.jpg","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/11967539.jpg","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/11967539.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Americano by The Brian Setzer Orchestra
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Americano","mbid":"","url":"http://www.last.fm/music/The+Brian+Setzer+Orchestra/_/Americano","date":{"#text":"10 Mar 2011, 14:47","uts":"1299768446"},"artist":{"name":"The Brian Setzer Orchestra","mbid":"3c98e32e-5bf5-4484-bdab-bd8d1736112a","url":"http://www.last.fm/music/The+Brian+Setzer+Orchestra"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/35548619.jpg","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/35548619.jpg","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/35548619.jpg","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/35548619.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Breeze Black Night by The Ditty Bops
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Breeze Black Night","mbid":"","url":"http://www.last.fm/music/The+Ditty+Bops/_/Breeze+Black+Night","date":{"#text":"10 Mar 2011, 14:43","uts":"1299768216"},"artist":{"name":"The Ditty Bops","mbid":"822c67fc-ab63-42ad-b27a-66039e37fe00","url":"http://www.last.fm/music/The+Ditty+Bops"},"image":[{"#text":"http://cdn.last.fm/flatness/catalogue/noimage/2/default_album_medium.png","size":"small"},{"#text":"http://cdn.last.fm/flatness/catalogue/noimage/2/default_album_medium.png","size":"medium"},{"#text":"http://cdn.last.fm/flatness/catalogue/noimage/2/default_album_medium.png","size":"large"},{"#text":"http://cdn.last.fm/flatness/catalogue/noimage/2/default_album_medium.png","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Le Onde by Ludovico Einaudi
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Le Onde","mbid":"","url":"http://www.last.fm/music/Ludovico+Einaudi/_/Le+Onde","date":{"#text":"9 Mar 2011, 15:19","uts":"1299683951"},"artist":{"name":"Ludovico Einaudi","mbid":"fa34b363-79df-434f-a5b8-be4e6898543f","url":"http://www.last.fm/music/Ludovico+Einaudi"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/56890765.jpg","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/56890765.jpg","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/56890765.jpg","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/56890765.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Am I Just One by Carey Ott
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Am I Just One","mbid":"","url":"http://www.last.fm/music/Carey+Ott/_/Am+I+Just+One","date":{"#text":"9 Mar 2011, 15:16","uts":"1299683782"},"artist":{"name":"Carey Ott","mbid":"20907daa-b798-4387-96a3-317848f56188","url":"http://www.last.fm/music/Carey+Ott"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/53750059.jpg","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/53750059.jpg","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/53750059.jpg","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/53750059.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : All These Things That I've Done by The Killers
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"All These Things That I've Done","mbid":"","url":"http://www.last.fm/music/The+Killers/_/All+These+Things+That+I%27ve+Done","date":{"#text":"9 Mar 2011, 14:38","uts":"1299681521"},"artist":{"name":"The Killers","mbid":"95e1ead9-4d31-4808-a7ac-32c3614c116b","url":"http://www.last.fm/music/The+Killers"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/39551741.png","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/39551741.png","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/39551741.png","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/39551741.png","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : The Box by Johnny Flynn
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"The Box","mbid":"","url":"http://www.last.fm/music/Johnny+Flynn/_/The+Box","date":{"#text":"9 Mar 2011, 14:33","uts":"1299681209"},"artist":{"name":"Johnny Flynn","mbid":"ce19a7e1-8c47-4dc6-9492-ef907ddc6514","url":"http://www.last.fm/music/Johnny+Flynn"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/60764857.jpg","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/60764857.jpg","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/60764857.jpg","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/60764857.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Sabre Dance by Արամ Խաչատրյան
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Sabre Dance","mbid":"","url":"http://www.last.fm/music/%D4%B1%D6%80%D5%A1%D5%B4+%D4%BD%D5%A1%D5%B9%D5%A1%D5%BF%D6%80%D5%B5%D5%A1%D5%B6/_/Sabre+Dance","date":{"#text":"9 Mar 2011, 14:07","uts":"1299679648"},"artist":{"name":"Արամ Խաչատրյան","mbid":"fa25cd1f-beeb-4718-b4bb-d3da4f53539f","url":"http://www.last.fm/music/%D4%B1%D6%80%D5%A1%D5%B4+%D4%BD%D5%A1%D5%B9%D5%A1%D5%BF%D6%80%D5%B5%D5%A1%D5%B6"},"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : C'mon Yeah by The Sunshine
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"C'mon Yeah","mbid":"","url":"http://www.last.fm/music/The+Sunshine/_/C%27mon+Yeah","date":{"#text":"8 Mar 2011, 17:03","uts":"1299603795"},"artist":{"name":"The Sunshine","mbid":"","url":"http://www.last.fm/music/The+Sunshine"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/54849187.jpg","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/54849187.jpg","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/54849187.jpg","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/54849187.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Backfire at the Disco by The Wombats
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Backfire at the Disco","mbid":"","url":"http://www.last.fm/music/The+Wombats/_/Backfire+at+the+Disco","date":{"#text":"8 Mar 2011, 15:42","uts":"1299598924"},"artist":{"name":"The Wombats","mbid":"e105c272-b5d7-4135-82ef-d60bded54345","url":"http://www.last.fm/music/The+Wombats"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/23514427.png","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/23514427.png","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/23514427.png","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/23514427.png","size":"extralarge"}],"streamable":{"#text":"0","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Calloway Boogie by Big Bad Voodoo Daddy
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Calloway Boogie","mbid":"","url":"http://www.last.fm/music/Big+Bad+Voodoo+Daddy/_/Calloway+Boogie","date":{"#text":"7 Mar 2011, 16:40","uts":"1299516035"},"artist":{"name":"Big Bad Voodoo Daddy","mbid":"d3118da8-ff3f-4396-9ddd-06168c875d56","url":"http://www.last.fm/music/Big+Bad+Voodoo+Daddy"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/27312777.jpg","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/27312777.jpg","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/27312777.jpg","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/27312777.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Amanda Jewell by Ricky Skaggs
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Amanda Jewell","mbid":"","url":"http://www.last.fm/music/Ricky+Skaggs/_/Amanda+Jewell","date":{"#text":"6 Mar 2011, 21:46","uts":"1299447979"},"artist":{"name":"Ricky Skaggs","mbid":"1a14063c-9dca-48d5-98c3-89748c74562b","url":"http://www.last.fm/music/Ricky+Skaggs"},"image":[{"#text":"http://images.amazon.com/images/P/B0000002QA.01.MZZZZZZZ.jpg","size":"small"},{"#text":"http://images.amazon.com/images/P/B0000002QA.01.MZZZZZZZ.jpg","size":"medium"},{"#text":"http://images.amazon.com/images/P/B0000002QA.01.MZZZZZZZ.jpg","size":"large"},{"#text":"http://images.amazon.com/images/P/B0000002QA.01.MZZZZZZZ.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Float On by Iron Horse
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Float On","mbid":"","url":"http://www.last.fm/music/Iron+Horse/_/Float+On","date":{"#text":"6 Mar 2011, 21:41","uts":"1299447701"},"artist":{"name":"Iron Horse","mbid":"30850b74-ee4d-4cd3-a920-40c72ddb2f20","url":"http://www.last.fm/music/Iron+Horse"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/5630770.jpg","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/5630770.jpg","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/5630770.jpg","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/5630770.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Maybe Someday by The Cinematics
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Maybe Someday","mbid":"","url":"http://www.last.fm/music/The+Cinematics/_/Maybe+Someday","date":{"#text":"4 Mar 2011, 16:57","uts":"1299257826"},"artist":{"name":"The Cinematics","mbid":"6a3fdc71-8bc4-4aca-827a-717072b60635","url":"http://www.last.fm/music/The+Cinematics"},"image":[{"#text":"http://ec1.images-amazon.com/images/P/B000M5AJUO.01._SCMZZZZZZZ_V43093200_.jpg","size":"small"},{"#text":"http://ec1.images-amazon.com/images/P/B000M5AJUO.01._SCMZZZZZZZ_V43093200_.jpg","size":"medium"},{"#text":"http://ec1.images-amazon.com/images/P/B000M5AJUO.01._SCMZZZZZZZ_V43093200_.jpg","size":"large"},{"#text":"http://ec1.images-amazon.com/images/P/B000M5AJUO.01._SCMZZZZZZZ_V43093200_.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : West Coast by Coconut Records
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"West Coast","mbid":"","url":"http://www.last.fm/music/Coconut+Records/_/West+Coast","date":{"#text":"3 Mar 2011, 22:24","uts":"1299191065"},"artist":{"name":"Coconut Records","mbid":"eddc0911-21fc-4327-ab90-ccc459ce1ef7","url":"http://www.last.fm/music/Coconut+Records"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/10194883.jpg","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/10194883.jpg","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/10194883.jpg","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/10194883.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Only In The Past by The Be Good Tanyas
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Only In The Past","mbid":"","url":"http://www.last.fm/music/The+Be+Good+Tanyas/_/Only+In+The+Past","date":{"#text":"3 Mar 2011, 22:14","uts":"1299190446"},"artist":{"name":"The Be Good Tanyas","mbid":"bf52f343-a752-4633-8521-9e99eaad8f9f","url":"http://www.last.fm/music/The+Be+Good+Tanyas"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/57499355.jpg","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/57499355.jpg","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/57499355.jpg","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/57499355.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Starry Night by The Infamous Stringdusters
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Starry Night","mbid":"","url":"http://www.last.fm/music/The+Infamous+Stringdusters/_/Starry+Night","date":{"#text":"3 Mar 2011, 02:28","uts":"1299119313"},"artist":{"name":"The Infamous Stringdusters","mbid":"43e088bd-2520-4a84-bb8e-827c86d2cf84","url":"http://www.last.fm/music/The+Infamous+Stringdusters"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/51146389.jpg","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/51146389.jpg","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/51146389.jpg","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/51146389.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Stoney Creek by Tony Rice
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Stoney Creek","mbid":"","url":"http://www.last.fm/music/Tony+Rice/_/Stoney+Creek","date":{"#text":"3 Mar 2011, 02:03","uts":"1299117826"},"artist":{"name":"Tony Rice","mbid":"ca90a5b0-cb18-4f94-9c14-116826fcc422","url":"http://www.last.fm/music/Tony+Rice"},"image":[{"#text":"http://userserve-ak.last.fm/serve/34s/32973899.jpg","size":"small"},{"#text":"http://userserve-ak.last.fm/serve/64s/32973899.jpg","size":"medium"},{"#text":"http://userserve-ak.last.fm/serve/126/32973899.jpg","size":"large"},{"#text":"http://userserve-ak.last.fm/serve/300x300/32973899.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: lastFmHandler : Da Sneck o' Da Smaalie by Fiddlers' Bid
+28 Mar 02:15:07 - info: lastFmHandler : track JSON : {"name":"Da Sneck o' Da Smaalie","mbid":"","url":"http://www.last.fm/music/Fiddlers%27+Bid/_/Da+Sneck+o%27+Da+Smaalie","date":{"#text":"3 Mar 2011, 00:45","uts":"1299113146"},"artist":{"name":"Fiddlers' Bid","mbid":"7f79a5ea-4d0a-40dc-a190-752cd6393f15","url":"http://www.last.fm/music/Fiddlers%27+Bid"},"image":[{"#text":"http://images.amazon.com/images/P/B00000HYXJ.01._SCMZZZZZZZ_.jpg","size":"small"},{"#text":"http://images.amazon.com/images/P/B00000HYXJ.01._SCMZZZZZZZ_.jpg","size":"medium"},{"#text":"http://images.amazon.com/images/P/B00000HYXJ.01._SCMZZZZZZZ_.jpg","size":"large"},{"#text":"http://images.amazon.com/images/P/B00000HYXJ.01._SCMZZZZZZZ_.jpg","size":"extralarge"}],"streamable":{"#text":"1","fulltrack":"0"}}
+28 Mar 02:15:07 - info: iTrackHandler :      iTrack: C'Mon Yeah by artist The Sunshine id : 252980090
+28 Mar 02:15:07 - info: iTrackHandler : lastfmTrack: C'mon Yeah by artist The Sunshine mbid : 
+28 Mar 02:15:07 - info: iTrackHandler :      iTrack: Le onde by artist Ludovico Einaudi id : 153362807
+28 Mar 02:15:07 - info: iTrackHandler : lastfmTrack: Le Onde by artist Ludovico Einaudi mbid : 
+28 Mar 02:15:07 - info: iTrackHandler :      iTrack: Am I Just One by artist Carey Ott id : 154808159
+28 Mar 02:15:07 - info: iTrackHandler : lastfmTrack: Am I Just One by artist Carey Ott mbid : 
+28 Mar 02:15:07 - info: iArtistHandler: success!!
+28 Mar 02:15:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/big-bad-voodoo-daddy/id106219?uo=4"}
+28 Mar 02:15:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:07 - info: iTrackHandler :      iTrack: The Box by artist Randy Travis id : 307031291
+28 Mar 02:15:07 - info: iTrackHandler : lastfmTrack: The Box by artist Johnny Flynn mbid : 
+28 Mar 02:15:07 - info: iArtistHandler: success!!
+28 Mar 02:15:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/kc-the-sunshine-band/id14589060?uo=4"}
+28 Mar 02:15:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:07 - info: iArtistHandler: success!!
+28 Mar 02:15:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/johnny-flynn/id265226437?uo=4"}
+28 Mar 02:15:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:07 - info: iArtistHandler: success!!
+28 Mar 02:15:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-brian-setzer-orchestra/id105412?uo=4"}
+28 Mar 02:15:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:07 - info: iArtistHandler: success!!
+28 Mar 02:15:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/jimmy-martin/id3441723?uo=4"}
+28 Mar 02:15:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:07 - info: iArtistHandler: success!!
+28 Mar 02:15:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-infamous-stringdusters/id209591048?uo=4"}
+28 Mar 02:15:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:07 - info: iArtistHandler: success!!
+28 Mar 02:15:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/fiddlers-bid/id184247141?uo=4"}
+28 Mar 02:15:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:07 - info: iArtistHandler: success!!
+28 Mar 02:15:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/iron-horse/id125711666?uo=4"}
+28 Mar 02:15:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:07 - info: iArtistHandler: success!!
+28 Mar 02:15:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-cinematics/id79344492?uo=4"}
+28 Mar 02:15:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:07 - info: iArtistHandler: success!!
+28 Mar 02:15:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/jim-jesse/id759651?uo=4"}
+28 Mar 02:15:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:07 - info: iArtistHandler: Could not find track
+28 Mar 02:15:07 - info: iArtistHandler: success!!
+28 Mar 02:15:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-wombats/id162731772?uo=4"}
+28 Mar 02:15:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:07 - info: iTrackHandler :      iTrack: Border Ride by artist Larry Keel & Natural Bridge id : 157686958
+28 Mar 02:15:07 - info: iTrackHandler : lastfmTrack: Border Ride by artist Jim and Jesse mbid : 
+28 Mar 02:15:07 - info: iTrackHandler :      iTrack: undefined by artist undefined id : undefined
+28 Mar 02:15:07 - info: iTrackHandler : lastfmTrack: Backfire at the Disco by artist The Wombats mbid : 
+28 Mar 02:15:08 - info: iArtistHandler: success!!
+28 Mar 02:15:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/carey-ott/id110306426?uo=4"}
+28 Mar 02:15:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:08 - info: iTrackHandler :      iTrack: Breeze Black Night by artist The Ditty Bops id : 5499485
+28 Mar 02:15:08 - info: iTrackHandler : lastfmTrack: Breeze Black Night by artist The Ditty Bops mbid : 
+28 Mar 02:15:08 - info: iTrackHandler :      iTrack: undefined by artist undefined id : undefined
+28 Mar 02:15:08 - info: iTrackHandler : lastfmTrack: Americano by artist The Brian Setzer Orchestra mbid : 
+28 Mar 02:15:08 - info: iArtistHandler: success!!
+28 Mar 02:15:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-ditty-bops/id5499453?uo=4"}
+28 Mar 02:15:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:08 - info: iTrackHandler :      iTrack: All These Things That I've Done by artist The Killers id : 14268735
+28 Mar 02:15:08 - info: iTrackHandler : lastfmTrack: All These Things That I've Done by artist The Killers mbid : 
+28 Mar 02:15:08 - info: iTrackHandler :      iTrack: Only In the Past by artist The Be Good Tanyas id : 412804372
+28 Mar 02:15:08 - info: iTrackHandler : lastfmTrack: Only In The Past by artist The Be Good Tanyas mbid : 
+28 Mar 02:15:08 - info: iArtistHandler: success!!
+28 Mar 02:15:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/coconut-records/id219389599?uo=4"}
+28 Mar 02:15:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:08 - info: iTrackHandler :      iTrack: Sophronie by artist Jimmy Martin id : 6765959
+28 Mar 02:15:08 - info: iTrackHandler : lastfmTrack: Sophronie by artist Jimmy Martin mbid : 
+28 Mar 02:15:08 - info: iArtistHandler: success!!
+28 Mar 02:15:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-killers/id6483093?uo=4"}
+28 Mar 02:15:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:08 - info: iTrackHandler :      iTrack: Maybe Someday by artist Black Stone Cherry id : 214472710
+28 Mar 02:15:08 - info: iTrackHandler : lastfmTrack: Maybe Someday by artist The Cinematics mbid : 
+28 Mar 02:15:08 - info: iTrackHandler :      iTrack: undefined by artist undefined id : undefined
+28 Mar 02:15:08 - info: iTrackHandler : lastfmTrack: Float On by artist Iron Horse mbid : 
+28 Mar 02:15:08 - info: iTrackHandler :      iTrack: Sabre Dance by artist Franz Richter & Radio Orchestra Berlin id : 363276556
+28 Mar 02:15:08 - info: iTrackHandler : lastfmTrack: Sabre Dance by artist Արամ Խաչատրյան mbid : 
+28 Mar 02:15:08 - info: iArtistHandler: success!!
+28 Mar 02:15:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-be-good-tanyas/id2385215?uo=4"}
+28 Mar 02:15:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:08 - info: iArtistHandler: success!!
+28 Mar 02:15:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/tony-rice/id2499892?uo=4"}
+28 Mar 02:15:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:08 - info: iTrackHandler :      iTrack: undefined by artist undefined id : undefined
+28 Mar 02:15:08 - info: iTrackHandler : lastfmTrack: West Coast by artist Coconut Records mbid : 
+28 Mar 02:15:08 - info: iTrackHandler :      iTrack: Starry Night by artist Chris August id : 386543524
+28 Mar 02:15:08 - info: iTrackHandler : lastfmTrack: Starry Night by artist The Infamous Stringdusters mbid : 
+28 Mar 02:15:08 - info: iTrackHandler :      iTrack: Bunny: The Trip to Pakistan/Da sneck o' da smaalie/The Bunny's H by artist Steampacket id : 160250628
+28 Mar 02:15:08 - info: iTrackHandler : lastfmTrack: Da Sneck o' Da Smaalie by artist Fiddlers' Bid mbid : 
+28 Mar 02:15:08 - info: iTrackHandler :      iTrack: Amanda Jewell by artist Ricky Skaggs & Kentucky Thunder id : 259757918
+28 Mar 02:15:08 - info: iTrackHandler : lastfmTrack: Amanda Jewell by artist Ricky Skaggs mbid : 
+28 Mar 02:15:08 - info: iArtistHandler: success!!
+28 Mar 02:15:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/ludovico-einaudi/id7420827?uo=4"}
+28 Mar 02:15:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:10 - info: iTrackHandler :      iTrack: Stoney Creek by artist Tony Rice id : 2459032
+28 Mar 02:15:10 - info: iTrackHandler : lastfmTrack: Stoney Creek by artist Tony Rice mbid : 
+28 Mar 02:15:10 - info: iArtistHandler: success!!
+28 Mar 02:15:10 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/ricky-skaggs/id170861?uo=4"}
+28 Mar 02:15:10 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:15:11 - info: iTrackHandler :      iTrack: Calloway Boogie by artist Big Bad Voodoo Daddy id : 307629327
+28 Mar 02:15:11 - info: iTrackHandler : lastfmTrack: Calloway Boogie by artist Big Bad Voodoo Daddy mbid : 

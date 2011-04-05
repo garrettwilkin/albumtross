@@ -1,0 +1,131 @@
+28 Mar 02:32:53 - info: Running as user: garrett UID: 1000 on port 80
+28 Mar 02:32:53 - info: successful launch
+28 Mar 02:32:53 - info: Configuration: garrettwilkin
+28 Mar 02:32:53 - info: All JS code loaded
+28 Mar 02:32:59 - info: Serving a static file with pride
+28 Mar 02:32:59 - info: GET /lastfm.html
+28 Mar 02:33:01 - info: Serving a static file with pride
+28 Mar 02:33:01 - info: GET /img/TheAlbumtross.png
+28 Mar 02:33:01 - info: Serving a static file with pride
+28 Mar 02:33:01 - info: GET /favicon.ico
+28 Mar 02:33:02 - info: client connected
+28 Mar 02:33:04 - info: garrettwilkin would like to contact Last.fm, how lovely.
+28 Mar 02:33:07 - info: YAY! LastFm returns success for garrettwilkin
+28 Mar 02:33:07 - info: lastFmHandler : Sophronie by Jimmy Martin
+28 Mar 02:33:07 - info: lastFmHandler : Border Ride by Jim and Jesse
+28 Mar 02:33:07 - info: lastFmHandler : Americano by The Brian Setzer Orchestra
+28 Mar 02:33:07 - info: lastFmHandler : Breeze Black Night by The Ditty Bops
+28 Mar 02:33:07 - info: lastFmHandler : Le Onde by Ludovico Einaudi
+28 Mar 02:33:07 - info: lastFmHandler : Am I Just One by Carey Ott
+28 Mar 02:33:07 - info: lastFmHandler : All These Things That I've Done by The Killers
+28 Mar 02:33:07 - info: lastFmHandler : The Box by Johnny Flynn
+28 Mar 02:33:07 - info: lastFmHandler : Sabre Dance by Արամ Խաչատրյան
+28 Mar 02:33:07 - info: lastFmHandler : C'mon Yeah by The Sunshine
+28 Mar 02:33:07 - info: lastFmHandler : Backfire at the Disco by The Wombats
+28 Mar 02:33:07 - info: lastFmHandler : Calloway Boogie by Big Bad Voodoo Daddy
+28 Mar 02:33:07 - info: lastFmHandler : Amanda Jewell by Ricky Skaggs
+28 Mar 02:33:07 - info: lastFmHandler : Float On by Iron Horse
+28 Mar 02:33:07 - info: lastFmHandler : Maybe Someday by The Cinematics
+28 Mar 02:33:07 - info: lastFmHandler : West Coast by Coconut Records
+28 Mar 02:33:07 - info: lastFmHandler : Only In The Past by The Be Good Tanyas
+28 Mar 02:33:07 - info: lastFmHandler : Starry Night by The Infamous Stringdusters
+28 Mar 02:33:07 - info: lastFmHandler : Stoney Creek by Tony Rice
+28 Mar 02:33:07 - info: lastFmHandler : Da Sneck o' Da Smaalie by Fiddlers' Bid
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: Sophronie by artist Jimmy Martin id : 6765959
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: Sophronie by artist Jimmy Martin mbid : 
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: Border Ride by artist Larry Keel & Natural Bridge id : 157686958
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: Border Ride by artist Jim and Jesse mbid : 
+28 Mar 02:33:07 - info: iArtistHandler: success!!
+28 Mar 02:33:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/jimmy-martin/id3441723?uo=4"}
+28 Mar 02:33:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:07 - info: iArtistHandler: success!!
+28 Mar 02:33:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-brian-setzer-orchestra/id105412?uo=4"}
+28 Mar 02:33:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:07 - info: iArtistHandler: success!!
+28 Mar 02:33:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-ditty-bops/id5499453?uo=4"}
+28 Mar 02:33:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: Le onde by artist Ludovico Einaudi id : 153362807
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: Le Onde by artist Ludovico Einaudi mbid : 
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: Am I Just One by artist Carey Ott id : 154808159
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: Am I Just One by artist Carey Ott mbid : 
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: We No Speak Americano by artist Yolanda Be Cool & Dcup id : 381418895
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: Americano by artist The Brian Setzer Orchestra mbid : 
+28 Mar 02:33:07 - info: iArtistHandler: success!!
+28 Mar 02:33:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/kc-the-sunshine-band/id14589060?uo=4"}
+28 Mar 02:33:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: Breeze Black Night by artist The Ditty Bops id : 5499485
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: Breeze Black Night by artist The Ditty Bops mbid : 
+28 Mar 02:33:07 - info: iArtistHandler: success!!
+28 Mar 02:33:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/carey-ott/id110306426?uo=4"}
+28 Mar 02:33:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: Maybe Someday by artist Black Stone Cherry id : 214472710
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: Maybe Someday by artist The Cinematics mbid : 
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: undefined by artist undefined id : undefined
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: Float On by artist Iron Horse mbid : 
+28 Mar 02:33:07 - info: iArtistHandler: success!!
+28 Mar 02:33:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/jim-jesse/id759651?uo=4"}
+28 Mar 02:33:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:07 - info: iArtistHandler: success!!
+28 Mar 02:33:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-be-good-tanyas/id2385215?uo=4"}
+28 Mar 02:33:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: Calloway Boogie by artist Big Bad Voodoo Daddy id : 307629327
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: Calloway Boogie by artist Big Bad Voodoo Daddy mbid : 
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: The Box by artist Randy Travis id : 307031291
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: The Box by artist Johnny Flynn mbid : 
+28 Mar 02:33:07 - info: iArtistHandler: success!!
+28 Mar 02:33:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/ludovico-einaudi/id7420827?uo=4"}
+28 Mar 02:33:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:07 - info: iArtistHandler: success!!
+28 Mar 02:33:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-wombats/id162731772?uo=4"}
+28 Mar 02:33:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:07 - info: iArtistHandler: success!!
+28 Mar 02:33:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/big-bad-voodoo-daddy/id106219?uo=4"}
+28 Mar 02:33:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:07 - info: iArtistHandler: success!!
+28 Mar 02:33:07 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/johnny-flynn/id265226437?uo=4"}
+28 Mar 02:33:07 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: Sabre Dance by artist Franz Richter & Radio Orchestra Berlin id : 363276556
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: Sabre Dance by artist Արամ Խաչատրյան mbid : 
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: C'Mon Yeah by artist The Sunshine id : 252980090
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: C'mon Yeah by artist The Sunshine mbid : 
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: Bunny: The Trip to Pakistan/Da sneck o' da smaalie/The Bunny's H by artist Steampacket id : 160250628
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: Da Sneck o' Da Smaalie by artist Fiddlers' Bid mbid : 
+28 Mar 02:33:07 - info: iTrackHandler :      iTrack: Starry Night by artist Chris August id : 386543524
+28 Mar 02:33:07 - info: iTrackHandler : lastfmTrack: Starry Night by artist The Infamous Stringdusters mbid : 
+28 Mar 02:33:08 - info: iArtistHandler: success!!
+28 Mar 02:33:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/fiddlers-bid/id184247141?uo=4"}
+28 Mar 02:33:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:08 - info: iTrackHandler :      iTrack: Amanda Jewell by artist Ricky Skaggs & Kentucky Thunder id : 259757918
+28 Mar 02:33:08 - info: iTrackHandler : lastfmTrack: Amanda Jewell by artist Ricky Skaggs mbid : 
+28 Mar 02:33:08 - info: iArtistHandler: success!!
+28 Mar 02:33:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/ricky-skaggs/id170861?uo=4"}
+28 Mar 02:33:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:08 - info: iArtistHandler: success!!
+28 Mar 02:33:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-cinematics/id79344492?uo=4"}
+28 Mar 02:33:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:08 - info: iArtistHandler: Could not find track
+28 Mar 02:33:08 - info: iTrackHandler :      iTrack: Stoney Creek by artist Tony Rice id : 2459032
+28 Mar 02:33:08 - info: iTrackHandler : lastfmTrack: Stoney Creek by artist Tony Rice mbid : 
+28 Mar 02:33:08 - info: iArtistHandler: success!!
+28 Mar 02:33:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/coconut-records/id219389599?uo=4"}
+28 Mar 02:33:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:08 - info: iTrackHandler :      iTrack: Only In the Past by artist The Be Good Tanyas id : 412804372
+28 Mar 02:33:08 - info: iTrackHandler : lastfmTrack: Only In The Past by artist The Be Good Tanyas mbid : 
+28 Mar 02:33:08 - info: iArtistHandler: success!!
+28 Mar 02:33:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/tony-rice/id2499892?uo=4"}
+28 Mar 02:33:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:08 - info: iArtistHandler: success!!
+28 Mar 02:33:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/iron-horse/id125711666?uo=4"}
+28 Mar 02:33:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:08 - info: iArtistHandler: success!!
+28 Mar 02:33:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-infamous-stringdusters/id209591048?uo=4"}
+28 Mar 02:33:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:08 - info: iTrackHandler :      iTrack: undefined by artist undefined id : undefined
+28 Mar 02:33:08 - info: iTrackHandler : lastfmTrack: West Coast by artist Coconut Records mbid : 
+28 Mar 02:33:08 - info: iTrackHandler :      iTrack: undefined by artist undefined id : undefined
+28 Mar 02:33:08 - info: iTrackHandler : lastfmTrack: Backfire at the Disco by artist The Wombats mbid : 
+28 Mar 02:33:08 - info: iArtistHandler: success!!
+28 Mar 02:33:08 - info: iArtistHandler: iArtist Full: {"artist":"http://itunes.apple.com/us/artist/the-killers/id6483093?uo=4"}
+28 Mar 02:33:08 - info: iArtistHandler:      iArtist: undefined
+28 Mar 02:33:11 - info: iTrackHandler :      iTrack: All These Things That I've Done by artist The Killers id : 14268735
+28 Mar 02:33:11 - info: iTrackHandler : lastfmTrack: All These Things That I've Done by artist The Killers mbid : 
